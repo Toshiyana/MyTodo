@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class SettingViewController: UITableViewController {
 

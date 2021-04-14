@@ -22,6 +22,11 @@
 		9956A61C2626D8D4004F2757 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A61B2626D8D4004F2757 /* SwipeTableViewController.swift */; };
 		9956A6272626D958004F2757 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A6262626D958004F2757 /* TodoListViewController.swift */; };
 		9956A62C2626DAB0004F2757 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A62B2626DAB0004F2757 /* SettingViewController.swift */; };
+		9956A6432626E457004F2757 /* UserDefaults+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A6422626E457004F2757 /* UserDefaults+UIColor.swift */; };
+		9956A6502626E72D004F2757 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A64F2626E72D004F2757 /* Constants.swift */; };
+		9956A6582626E889004F2757 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A6572626E889004F2757 /* Category.swift */; };
+		9956A65D2626E895004F2757 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A65C2626E895004F2757 /* Item.swift */; };
+		9956A6622626E8F7004F2757 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A6612626E8F7004F2757 /* FloatingButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		9956A61B2626D8D4004F2757 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		9956A6262626D958004F2757 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		9956A62B2626DAB0004F2757 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		9956A6422626E457004F2757 /* UserDefaults+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+UIColor.swift"; sourceTree = "<group>"; };
+		9956A64F2626E72D004F2757 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9956A6572626E889004F2757 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9956A65C2626E895004F2757 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9956A6612626E8F7004F2757 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		9AB379925491715D3EC02405 /* Pods-myTodo-myTodoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTodo-myTodoUITests.release.xcconfig"; path = "Target Support Files/Pods-myTodo-myTodoUITests/Pods-myTodo-myTodoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A31268E6BA4864128E260452 /* Pods-myTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTodo.release.xcconfig"; path = "Target Support Files/Pods-myTodo/Pods-myTodo.release.xcconfig"; sourceTree = "<group>"; };
 		BE0515F741037DE91F6E5F2A /* Pods_myTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,10 +134,13 @@
 		9956A5E02626D759004F2757 /* myTodo */ = {
 			isa = PBXGroup;
 			children = (
-				9956A61A2626D880004F2757 /* Controllers */,
 				9956A5E12626D759004F2757 /* AppDelegate.swift */,
 				9956A5E32626D759004F2757 /* SceneDelegate.swift */,
-				9956A5E72626D759004F2757 /* Main.storyboard */,
+				9956A64F2626E72D004F2757 /* Constants.swift */,
+				9956A6412626E425004F2757 /* Extensions */,
+				9956A64B2626E4A1004F2757 /* Data Model */,
+				9956A64A2626E475004F2757 /* Views */,
+				9956A61A2626D880004F2757 /* Controllers */,
 				9956A5ED2626D75F004F2757 /* Assets.xcassets */,
 				9956A5EF2626D75F004F2757 /* LaunchScreen.storyboard */,
 				9956A5F22626D75F004F2757 /* Info.plist */,
@@ -165,6 +178,32 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		9956A6412626E425004F2757 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9956A6422626E457004F2757 /* UserDefaults+UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9956A64A2626E475004F2757 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9956A5E72626D759004F2757 /* Main.storyboard */,
+				9956A6612626E8F7004F2757 /* FloatingButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9956A64B2626E4A1004F2757 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				9956A6572626E889004F2757 /* Category.swift */,
+				9956A65C2626E895004F2757 /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
 		A8F489F4E8EB8CDA15BF9610 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +214,6 @@
 				80BA6D651CFF416264C482B8 /* Pods-myTodoTests.debug.xcconfig */,
 				FF8FCFDC19CDDED14A6C101B /* Pods-myTodoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -428,12 +466,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9956A6272626D958004F2757 /* TodoListViewController.swift in Sources */,
+				9956A6582626E889004F2757 /* Category.swift in Sources */,
 				9956A5E62626D759004F2757 /* CategoryViewController.swift in Sources */,
 				9956A5E22626D759004F2757 /* AppDelegate.swift in Sources */,
 				9956A5E42626D759004F2757 /* SceneDelegate.swift in Sources */,
+				9956A6432626E457004F2757 /* UserDefaults+UIColor.swift in Sources */,
+				9956A65D2626E895004F2757 /* Item.swift in Sources */,
 				9956A5EC2626D759004F2757 /* myTodo.xcdatamodeld in Sources */,
 				9956A62C2626DAB0004F2757 /* SettingViewController.swift in Sources */,
 				9956A61C2626D8D4004F2757 /* SwipeTableViewController.swift in Sources */,
+				9956A6502626E72D004F2757 /* Constants.swift in Sources */,
+				9956A6622626E8F7004F2757 /* FloatingButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
