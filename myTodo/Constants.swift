@@ -9,6 +9,16 @@ import Foundation
 
 struct K {
     static let cellIdentifier = "Cell"
-    static let categorySegue = "goToItems"
+    static let messageCellIdentifier = "MessageCell"
+    static let categoryToItemSegue = "goToItems"
     static let settingToColorSegue = "goToColors"
+    
+    struct Setting {
+        static let staticCellIdentifier = "StaticCell"
+        static let settingIconCellIdentifier = "SettingIconTableViewCell"
+        static let colorCellIdentifier = "ColorTableViewCell"
+        static let versionCellIdentifier = "VersionTableViewCell"
+    }
+    
+    static let colorCollectionCellIdentifier = "ColorCollectionCell"
 }

@@ -8,11 +8,14 @@
 import UIKit
 import RealmSwift
 import ChameleonFramework
+import SwipeCellKit
 
 class CategoryViewController: SwipeTableViewController {
     
     private var addButton: FloatingButton!
     @IBOutlet weak var editButton: UIBarButtonItem!
+    
+    let defaults = UserDefaults.standard
     
     let realm = try! Realm()//try!の意味は後で調べる（!はつけた方が良いときとそうでない時があるみたい）
     
@@ -33,12 +36,15 @@ class CategoryViewController: SwipeTableViewController {
             fatalError("NavigationController does not exist.")
         }
 
-        navBar.barTintColor = UIColor(hexString: "0A84FF")
-        navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]//navbarのtitleのcolorを変更
+        //navBar.barTintColor = UIColor(hexString: "0A84FF")
+        //navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]//navbarのtitleのcolorを変更
+        navBar.barTintColor = defaults.getColorForKey(key: "NavBarColor") ?? FlatBlue()
+        addButton.floatButton.layer.backgroundColor = (defaults.getColorForKey(key: "NavBarColor") ?? FlatBlue()).cgColor
+
+        tabBarController?.tabBar.isHidden = false
     }
     
     //MARK: - TableView Datasource Methods
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return categories?.count ?? 1 //nilだったら1を返す
@@ -47,8 +53,14 @@ class CategoryViewController: SwipeTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! SwipeTableViewCell
+
+        cell.delegate = self
+        
+        
+        
         //swipeTableViewControllerよりtableView(cellForRowAt)のcellを継承
-        let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        // let cell = super.tableView(tableView, cellForRowAt: indexPath)
         
         if let category = categories?[indexPath.row] {
 
@@ -64,18 +76,19 @@ class CategoryViewController: SwipeTableViewController {
     //MARK: - TableView Delegate Methods
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: K.categorySegue, sender: self)
+        performSegue(withIdentifier: K.categoryToItemSegue, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //カテゴリセルを押したときの処理
         if let indexPath = tableView.indexPathForSelectedRow {
             let destinationVC = segue.destination as! TodoListViewController
             destinationVC.selectedCategory = categories?[indexPath.row]
-        }
+        }        
     }
     
     //MARK: - Data Manupulation Methods
-    func save(category: Category) {
+    private func save(category: Category) {
         do {
             try realm.write {
                 realm.add(category)
@@ -193,10 +206,10 @@ class CategoryViewController: SwipeTableViewController {
 
         }
 
-        let canelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
 
         alert.addAction(addAction)
-        alert.addAction(canelAction)
+        alert.addAction(cancelAction)
 
         alert.addTextField { (field) in
             textField = field

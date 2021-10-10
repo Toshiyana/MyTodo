@@ -10,6 +10,13 @@
 		0B54394041E99B9B2A08B026 /* Pods_myTodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3EB7760EE3695C666966A05 /* Pods_myTodoTests.framework */; };
 		226B37889C0E02BC72C29038 /* Pods_myTodo_myTodoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74DDA9D0A868FC0109CB4EF4 /* Pods_myTodo_myTodoUITests.framework */; };
 		488C4D8A274FCFB68858533B /* Pods_myTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0515F741037DE91F6E5F2A /* Pods_myTodo.framework */; };
+		9925573226B31DCD001F6EE3 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9925573026B31DCD001F6EE3 /* MessageCell.swift */; };
+		9925573326B31DCD001F6EE3 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9925573126B31DCD001F6EE3 /* MessageCell.xib */; };
+		9940FF94265592B4006D045E /* ColorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FF93265592B4006D045E /* ColorTableViewCell.swift */; };
+		9940FF99265633E4006D045E /* VersionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FF98265633E4006D045E /* VersionTableViewCell.swift */; };
+		9940FFAD2656661E006D045E /* SettingIconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FFAC2656661E006D045E /* SettingIconTableViewCell.swift */; };
+		9940FFB2265680CA006D045E /* ColorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FFB1265680CA006D045E /* ColorCollectionViewController.swift */; };
+		9940FFB826568332006D045E /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9940FFB726568332006D045E /* ColorCollectionViewCell.swift */; };
 		9956A5E22626D759004F2757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A5E12626D759004F2757 /* AppDelegate.swift */; };
 		9956A5E42626D759004F2757 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A5E32626D759004F2757 /* SceneDelegate.swift */; };
 		9956A5E62626D759004F2757 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A5E52626D759004F2757 /* CategoryViewController.swift */; };
@@ -27,6 +34,9 @@
 		9956A6582626E889004F2757 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A6572626E889004F2757 /* Category.swift */; };
 		9956A65D2626E895004F2757 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A65C2626E895004F2757 /* Item.swift */; };
 		9956A6622626E8F7004F2757 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A6612626E8F7004F2757 /* FloatingButton.swift */; };
+		9956A66E262A4DD3004F2757 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9956A66D262A4DD3004F2757 /* SettingModel.swift */; };
+		99A807BF269DFA6200B3BDA6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A807BE269DFA6200B3BDA6 /* Message.swift */; };
+		99A807D0269F2A3B00B3BDA6 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A807CF269F2A3B00B3BDA6 /* MessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +60,13 @@
 		4488FAC81DBA8C93BB7E7612 /* Pods-myTodo-myTodoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTodo-myTodoUITests.debug.xcconfig"; path = "Target Support Files/Pods-myTodo-myTodoUITests/Pods-myTodo-myTodoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		74DDA9D0A868FC0109CB4EF4 /* Pods_myTodo_myTodoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myTodo_myTodoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BA6D651CFF416264C482B8 /* Pods-myTodoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTodoTests.debug.xcconfig"; path = "Target Support Files/Pods-myTodoTests/Pods-myTodoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9925573026B31DCD001F6EE3 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		9925573126B31DCD001F6EE3 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		9940FF93265592B4006D045E /* ColorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableViewCell.swift; sourceTree = "<group>"; };
+		9940FF98265633E4006D045E /* VersionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionTableViewCell.swift; sourceTree = "<group>"; };
+		9940FFAC2656661E006D045E /* SettingIconTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingIconTableViewCell.swift; sourceTree = "<group>"; };
+		9940FFB1265680CA006D045E /* ColorCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewController.swift; sourceTree = "<group>"; };
+		9940FFB726568332006D045E /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
 		9956A5DE2626D759004F2757 /* myTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9956A5E12626D759004F2757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9956A5E32626D759004F2757 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +90,9 @@
 		9956A6572626E889004F2757 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		9956A65C2626E895004F2757 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9956A6612626E8F7004F2757 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
+		9956A66D262A4DD3004F2757 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		99A807BE269DFA6200B3BDA6 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		99A807CF269F2A3B00B3BDA6 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		9AB379925491715D3EC02405 /* Pods-myTodo-myTodoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTodo-myTodoUITests.release.xcconfig"; path = "Target Support Files/Pods-myTodo-myTodoUITests/Pods-myTodo-myTodoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A31268E6BA4864128E260452 /* Pods-myTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTodo.release.xcconfig"; path = "Target Support Files/Pods-myTodo/Pods-myTodo.release.xcconfig"; sourceTree = "<group>"; };
 		BE0515F741037DE91F6E5F2A /* Pods_myTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +129,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9946A40F26B6BDAC00D70CA3 /* Seed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Seed;
+			sourceTree = "<group>";
+		};
 		9956A5D52626D759004F2757 = {
 			isa = PBXGroup;
 			children = (
@@ -137,8 +164,9 @@
 				9956A5E12626D759004F2757 /* AppDelegate.swift */,
 				9956A5E32626D759004F2757 /* SceneDelegate.swift */,
 				9956A64F2626E72D004F2757 /* Constants.swift */,
+				9946A40F26B6BDAC00D70CA3 /* Seed */,
 				9956A6412626E425004F2757 /* Extensions */,
-				9956A64B2626E4A1004F2757 /* Data Model */,
+				9956A64B2626E4A1004F2757 /* Model */,
 				9956A64A2626E475004F2757 /* Views */,
 				9956A61A2626D880004F2757 /* Controllers */,
 				9956A5ED2626D75F004F2757 /* Assets.xcassets */,
@@ -174,6 +202,8 @@
 				9956A5E52626D759004F2757 /* CategoryViewController.swift */,
 				9956A6262626D958004F2757 /* TodoListViewController.swift */,
 				9956A62B2626DAB0004F2757 /* SettingViewController.swift */,
+				9940FFB1265680CA006D045E /* ColorCollectionViewController.swift */,
+				99A807CF269F2A3B00B3BDA6 /* MessageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -191,17 +221,25 @@
 			children = (
 				9956A5E72626D759004F2757 /* Main.storyboard */,
 				9956A6612626E8F7004F2757 /* FloatingButton.swift */,
+				9940FF93265592B4006D045E /* ColorTableViewCell.swift */,
+				9940FF98265633E4006D045E /* VersionTableViewCell.swift */,
+				9940FFAC2656661E006D045E /* SettingIconTableViewCell.swift */,
+				9940FFB726568332006D045E /* ColorCollectionViewCell.swift */,
+				9925573026B31DCD001F6EE3 /* MessageCell.swift */,
+				9925573126B31DCD001F6EE3 /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		9956A64B2626E4A1004F2757 /* Data Model */ = {
+		9956A64B2626E4A1004F2757 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				9956A6572626E889004F2757 /* Category.swift */,
 				9956A65C2626E895004F2757 /* Item.swift */,
+				99A807BE269DFA6200B3BDA6 /* Message.swift */,
+				9956A66D262A4DD3004F2757 /* SettingModel.swift */,
 			);
-			path = "Data Model";
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A8F489F4E8EB8CDA15BF9610 /* Pods */ = {
@@ -336,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9956A5F12626D75F004F2757 /* LaunchScreen.storyboard in Resources */,
+				9925573326B31DCD001F6EE3 /* MessageCell.xib in Resources */,
 				9956A5EE2626D75F004F2757 /* Assets.xcassets in Resources */,
 				9956A5E92626D759004F2757 /* Main.storyboard in Resources */,
 			);
@@ -466,17 +505,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				9956A6272626D958004F2757 /* TodoListViewController.swift in Sources */,
+				9940FF99265633E4006D045E /* VersionTableViewCell.swift in Sources */,
+				9940FF94265592B4006D045E /* ColorTableViewCell.swift in Sources */,
+				9940FFAD2656661E006D045E /* SettingIconTableViewCell.swift in Sources */,
 				9956A6582626E889004F2757 /* Category.swift in Sources */,
 				9956A5E62626D759004F2757 /* CategoryViewController.swift in Sources */,
+				9940FFB826568332006D045E /* ColorCollectionViewCell.swift in Sources */,
 				9956A5E22626D759004F2757 /* AppDelegate.swift in Sources */,
 				9956A5E42626D759004F2757 /* SceneDelegate.swift in Sources */,
 				9956A6432626E457004F2757 /* UserDefaults+UIColor.swift in Sources */,
 				9956A65D2626E895004F2757 /* Item.swift in Sources */,
+				9956A66E262A4DD3004F2757 /* SettingModel.swift in Sources */,
 				9956A5EC2626D759004F2757 /* myTodo.xcdatamodeld in Sources */,
 				9956A62C2626DAB0004F2757 /* SettingViewController.swift in Sources */,
+				99A807D0269F2A3B00B3BDA6 /* MessageViewController.swift in Sources */,
 				9956A61C2626D8D4004F2757 /* SwipeTableViewController.swift in Sources */,
 				9956A6502626E72D004F2757 /* Constants.swift in Sources */,
+				99A807BF269DFA6200B3BDA6 /* Message.swift in Sources */,
+				9940FFB2265680CA006D045E /* ColorCollectionViewController.swift in Sources */,
 				9956A6622626E8F7004F2757 /* FloatingButton.swift in Sources */,
+				9925573226B31DCD001F6EE3 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

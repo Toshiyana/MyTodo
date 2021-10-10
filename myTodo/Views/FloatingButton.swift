@@ -24,7 +24,8 @@ class FloatingButton: NSObject {
         parentView = view
         
         floatButton = UIButton(type: .custom)
-        floatButton.layer.backgroundColor = CGColor(red: 100.0/255.0, green: 130.0/255.0, blue: 230.0/255.0, alpha: 1.0)
+        //floatButton.layer.backgroundColor = CGColor(red: 100.0/255.0, green: 130.0/255.0, blue: 230.0/255.0, alpha: 1.0)
+        //floatButton.layer.backgroundColor
         floatButton.layer.cornerRadius = buttonWidth / 2
         floatButton.layer.shadowOpacity = 0.25
         floatButton.layer.shadowRadius = 5

@@ -23,7 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Error initialising new realm, \(error)")
         }
         
-        //print(Realm.Configuration.defaultConfiguration.fileURL)//realmのdataが保存されているファイルまでのpath
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL)//realmのdataが保存されているファイルまでのpath
         
         return true
     }

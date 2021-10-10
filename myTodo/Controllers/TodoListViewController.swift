@@ -8,6 +8,7 @@
 import UIKit
 import RealmSwift
 import ChameleonFramework
+import SwipeCellKit
 
 class TodoListViewController: SwipeTableViewController {
     
@@ -64,9 +65,15 @@ class TodoListViewController: SwipeTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todoItems?.count ?? 1
     }
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        //let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! SwipeTableViewCell
+
+        cell.delegate = self
+
         
         if let item = todoItems?[indexPath.row] {
             cell.textLabel?.text = item.title
@@ -79,6 +86,8 @@ class TodoListViewController: SwipeTableViewController {
     }
         
     //MARK: - TableView Delegate Methods
+    
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if let item = todoItems?[indexPath.row] {
